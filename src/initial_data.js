@@ -1,7 +1,13 @@
 const initialData = {
 
-  // User will be able to change this line, to which we add fat or skinny diamond.
+  // User will be able to change selected edge by moving around the perimeter.
   selectedEdge: 1,
+
+  // For debugging, we add a button that changes oneTileOnly to true.
+
+  oneTileOnly: false,
+
+  errorCondition: false,  // TODO: Expand this to be great.
 
   // Start with the four points of a fat tile.
   // Coordinates will not change, but the vertex will change when more tiles are added.

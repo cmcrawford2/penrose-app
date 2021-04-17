@@ -1,18 +1,14 @@
 .App {
-  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: darkslategray;
+  background-color: azure;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 15px 0 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* This was the default react-app header style.
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,26 +19,59 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+*/
 
-.App-link {
-  color: #61dafb;
+.App-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: azure;
+}
+
+.Penrose-background {
+  width: auto;
+  height: 100%;
+}
+
+.Button-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.Button-box {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .SortButton {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   font-weight: normal;
+  min-width: 150px;
   padding: 10px;
-  margin: 25px;
-  background-color: white;
-  color: black;
+  margin: 20px;
+  background-color: lightcyan;
+  color: darkslategray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.About-container {
+  padding: 0 15px;
+}
+
+.Computer-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* Buttons to the side */
+  .App-container {
+    flex-direction: row;
   }
 }

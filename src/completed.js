@@ -5,6 +5,7 @@ export const completedVertex =
   'AAFHAA',
   'AFHAAA',
   'FHAAAA',
+  'HAAAAF',
   'AAFHAFH',
   'AFHAFHA',
   'FHAFHAA',

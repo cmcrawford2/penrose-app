@@ -6,7 +6,7 @@ const nextVertexTable = {
     'E': { next: 'B', fatAdd: 'B', skinnyAdd: '' },
     'F': { next: '', fatAdd: 'D', skinnyAdd: 'H' }, // Can add D or H
     'G': { next: '', fatAdd: 'C', skinnyAdd: 'G' }, // Can add C or G
-    'H': { next: 'A', fatAdd: '', skinnyAdd: '' },
+    'H': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
     'AA': { next: '', fatAdd: 'A', skinnyAdd: 'F' }, // Can add A or F
     'AF': { next: '', fatAdd: 'D', skinnyAdd: 'H' }, // Can add D or H
     'BD': { next: 'E', fatAdd: '', skinnyAdd: 'E' },
@@ -31,22 +31,24 @@ const nextVertexTable = {
     'CGC': { next: 'C', fatAdd: 'C', skinnyAdd: '' },
     'DBH': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
     'FDB': { next: 'H', fatAdd: '', skinnyAdd: 'H' },
+    'FHA': { next: '', fatAdd: 'A', skinnyAdd: 'F' },
     'GCC': { next: 'C', fatAdd: 'C', skinnyAdd: '' },
-    'HAA': { next: '', fatAdd: 'A', skinnyAdd: 'F' }, // Can add A or F
-    'HAF': { next: 'H', fatAdd: '', skinnyAdd: 'H' },
+    'HAA': { next: '', fatAdd: 'A', skinnyAdd: 'F' }, // Can add A or F. Requires special code to prepend F.
+    'HAF': { next: '', fatAdd: 'D', skinnyAdd: 'H' }, // Can add B or H
     'AAAA': { next: '', fatAdd: 'A', skinnyAdd: 'F' }, // Can add A or F
     'AAAF': { next: 'H', fatAdd: '', skinnyAdd: 'H' },
     'AAFH': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
     'AFDB': { next: 'H', fatAdd: '', skinnyAdd: 'H' },
     'AFHA': { next: '', fatAdd: 'A', skinnyAdd: 'F' }, // Can add A or F
     'BHAF': { next: 'D', fatAdd: 'D', skinnyAdd: '' },
-    'CCCC': { next: 'D', fatAdd: 'D', skinnyAdd: '' },
+    'CCCC': { next: 'C', fatAdd: 'C', skinnyAdd: '' },
     'DBHA': { next: 'F', fatAdd: '', skinnyAdd: 'F' },
     'FDBH': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
     'FHAA': { next: '', fatAdd: 'A', skinnyAdd: 'F' }, // Can add A or F
     'FHAF': { next: 'H', fatAdd: '', skinnyAdd: 'H' },
     'HAAA': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
     'HAAF': { next: 'H', fatAdd: '', skinnyAdd: 'H' },
+    'HAFD': { next: 'B', fatAdd: 'B', skinnyAdd: '' },
     'HAFH': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
     'AAAAF': { next: 'H', fatAdd: '', skinnyAdd: 'H' },
     'AAAFH': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
@@ -61,10 +63,11 @@ const nextVertexTable = {
     'HAFHA': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
     'AAFHAF': { next: 'H', fatAdd: '', skinnyAdd: 'H' },
     'AFHAAF': { next: 'H', fatAdd: '', skinnyAdd: 'H' },
+    'AFHAFH': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
+    'FHAAFH': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
     'FHAFHA': { next: 'A', fatAdd: 'A', skinnyAdd: '' },
     'HAAFHA': { next: 'F', fatAdd: '', skinnyAdd: 'F' },
-    'HAFHAA': { next: 'F', fatAdd: '', skinnyAdd: 'F' },
-    
+    'HAFHAA': { next: 'F', fatAdd: '', skinnyAdd: 'F' }, 
 };
 
 export default nextVertexTable;
