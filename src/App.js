@@ -655,7 +655,7 @@ class App extends React.Component {
           </div>
           <div className="Button-column">
             <h1>Penrose Laboratory</h1>
-            <p>A Penrose tiling consists of wide and narrow diamonds. "Add" buttons attach a tile to the white line and fill in the tiling. "Move selection" moves the white line around the perimeter. "Toggle Auto-fill" disables automatic completion and provides more options. Start over with hard reset (ctrl-r or cmd-r).</p>
+            <p>A Penrose tiling consists of wide and narrow diamonds. "Add" buttons attach a tile to the white line and fill in the tiling. "Move selection" moves the white line around the perimeter. "Toggle Auto-fill" disables automatic completion and provides more options. Start over by refreshing the browser page.</p>
             <div className="Button-box">
               <button className="SortButton" onClick={this.addFat}>
                 Add Wide Tile
