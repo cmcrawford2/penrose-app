@@ -695,7 +695,7 @@ class App extends React.Component {
             <img class="Computer-image" src="/breadboard-computer.jpeg" alt="Breadboard Computer" />
           </div>
           <p>Created by Cris Crawford</p>
-          <p>This program is written in Javascript React using the same algorithm as the one I wrote 23 years ago. Lines are drawn using the open source react-lineto package.</p>
+          <p>This program is written in JavaScript React using the same algorithm as the one I wrote 23 years ago. Lines are drawn using the open source react-lineto package.</p>
           <p>Oscilloscope image by Elborgo - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=2841283</p>
         </div>
       </div>
