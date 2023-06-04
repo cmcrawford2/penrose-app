@@ -39,5 +39,74 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div style="padding: 0 15px">
+      <h2>About Penrose Laboratory</h2>
+      <p>
+        Roger Penrose discovered a way to tile the infinite plane with
+        pentagonal symmetry. The tiling can be expanded indefinitely, but it
+        never repeats. The
+        <a href="https://en.wikipedia.org/wiki/Penrose_tiling">
+          Wikipedia article on Penrose tiles
+        </a>
+        is a good source of information. In my version, two diamonds are fitted
+        together according to certain rules. These rules only allow eight
+        different vertex configurations. After a tile is added, the code
+        traverses the perimeter of the tiling, using a lookup table to find
+        vertices that demand the addition of a specific tile. You can see how
+        this works by disabling auto-fill and traversing the boundary one tile
+        at a time.
+      </p>
+      <p>
+        One of the properties of this way of tiling is that legal local
+        modifications may create an illegal tiling at a distant location. You
+        can see this effect by adding a narrow tile to the default white edge
+        six times in a row. Then toggle auto-fill and force the program to
+        traverse the perimeter until the flawed tiling is complete.
+      </p>
+      <p>
+        You can also create your own illegal tilings by disabling auto-fill and
+        adding tiles one by one.
+      </p>
+      <h2>Why is the tiling displayed on an oscilloscope?</h2>
+      <p>
+        I built a computer using a Motorola 68008 microprocessor in Tom Hayes'
+        digital electronics class at the Harvard Extension school in 1997
+        (pictured below). Once I had the thing wired up properly, I programmed
+        it in machine language to draw Penrose tiles on an oscilloscope, with a
+        user interface consisting of the four buttons on the lower right. Later
+        I refined the program using an assembly language interface that
+        downloaded the code onto a RAM chip. The four buttons reset the display
+        to a wide diamond, allowed the user to select an edge on the perimeter
+        of the tiling, and added a wide or narrow diamond to the selected edge.
+        Then the code filled in all the tiles that were determined by the rules.
+        The program was basically a loop that drew a bunch of lines over and
+        over, while the user buttons triggered interrupts and changed the data.
+        My computer was so awesome that it achieved immortality, meaning I
+        didn't have to disassemble it when the class was over.
+      </p>
+      <p>
+        One of the best books I have ever read is
+        <a href="https://secondkindofimpossible.org/">
+          "The Second Kind of Impossible"
+        </a>
+        by Paul Steinhardt. He and others investigated the possibility of a
+        physical crystalline structure based on Penrose tiles. The book
+        describes how he and his collaborators then managed to actually find
+        such a crystal in the far reaches of Siberia. You HAVE to read it.
+      </p>
+      <div>
+        <img src="/breadboard-computer.jpeg" alt="Breadboard Computer" />
+      </div>
+      <p>Created by Cris Crawford</p>
+      <p>
+        This program is written in React using the same algorithm as the one I
+        wrote 25 years ago. Lines are drawn using the open source react-lineto
+        package.
+      </p>
+      <p>
+        Oscilloscope image by Elborgo - Own work, CC BY 3.0,
+        https://commons.wikimedia.org/w/index.php?curid=2841283
+      </p>
+    </div>
   </body>
 </html>

@@ -1,5 +1,4 @@
 const initialData = {
-
   // User will be able to change selected edge by moving around the perimeter.
   selectedEdge: 1,
 
@@ -7,7 +6,7 @@ const initialData = {
 
   oneTileOnly: false,
 
-  errorCondition: false,  // TODO: Expand this to be great.
+  errorCondition: false, // TODO: Expand this to be great.
 
   // Start with the four points of a fat tile.
   // Coordinates will not change, but the vertex will change when more tiles are added.
@@ -35,11 +34,9 @@ const initialData = {
     { stPoint: 2, enPoint: 3, prevLine: 1, nextLine: 3, angle: -54 },
     { stPoint: 3, enPoint: 0, prevLine: 2, nextLine: 0, angle: -126 },
   ],
-  
-  // Todo: table of partial vertex possibilities and possible tile point additions.
 
   // Counterclockwise tile points of "fat" diamond are A, B, C, D.
-  // A is the vertex at the two single arrows at the 72° angle, which point out. 
+  // A is the vertex at the two single arrows at the 72° angle, which point out.
   // Counterclockwise tile points of "skinny" diamond are E, F, G, H.
   // E is the vertex at the two single arrows at the 108° angle, which point in.
 
